@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wilcare Aqua - Features</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="feature.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-container">
+      <img src="../images/logo.PNG" alt="Wilcare Aqua Logo" class="logo" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../landing_page/landing.html">Home</a></li>
+          <li><a href="../feature/feature.html" class="active">Features</a></li>
+          <li><a href="../signup/signup.html" class="btn-signup">Sign Up</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro hero-section">
+      <div class="intro-content">
+        <h1>Explore Wilcare Aqua's Services & Operations</h1>
+        <p>Providing pristine water, unparalleled service, and trusted delivery for over 18 years in Angeles City.
+          Discover how we bring freshness to your doorstep.</p>
+        <a href="#gallery" class="btn-primary scroll-down-btn">Discover More</a>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery content-section">
+      <h2>Our Operations in Focus</h2>
+      <div class="grid">
+        <figure class="gallery-item reveal-item">
+          <img src="../images/featureimg1.jfif" alt="">
+          <figcaption>Ready to be delivered</figcaption>
+        </figure>
+        <figure class="gallery-item reveal-item">
+          <img src="../images/featureimg2.jfif" alt="">
+          <figcaption>Return Containers</figcaption>
+        </figure>
+        <figure class="gallery-item reveal-item">
+          <img src="../images/featureimg3.jfif" alt="">
+          <figcaption>Doorstep Delivery</figcaption>
+        </figure>
+        <figure class="gallery-item reveal-item">
+          <img src="../images/featureimg4.jfif" alt="">
+          <figcaption>Storage</figcaption>
+        </figure>
+        <figure class="gallery-item reveal-item">
+          <img src="../images/featureimg5.jfif" alt="">
+          <figcaption>Refilling Station</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="videos content-section">
+      <h2>Experience Wilcare Aqua in Motion</h2>
+      <div class="video-grid">
+        <div class="video-card reveal-item">
+          <video controls width="100%" height="200" style="border-radius: 10px; margin-bottom: 1rem;">
+            <source src="../images/featurevid1.mp4" type="video/mp4">
+          </video>
+          <h3>Start of Purification</h3>
+          <p>Go behind the scenes and see the precision and care that goes into our daily water preparation and dispatch process.</p>
+        </div>
+        <div class="video-card reveal-item">
+          <video controls width="100%" height="200" style="border-radius: 10px; margin-bottom: 1rem;">
+            <source src="../images/featurevid2.mp4" type="video/mp4">
+          </video>
+          <h3>Processing the water</h3>
+          <p>Witness the advanced multi-stage purification and treatment processes
+             that ensure every drop of Wilcare Aqua water is clean, safe, and of the highest quality.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="business-info content-section">
+      <h2>Our Unwavering Commitment to You</h2>
+      <ul class="commitments">
+        <li class="reveal-item">
+          <p><strong>18+ Years of Reliable Water Service:</strong><br>A legacy of trust and quality.</p>
+        </li>
+        <li class="reveal-item">
+          <p><strong>Manual & Dedicated Operations:</strong><br>Every drop handled with care and precision.</p>
+        </li>
+        <li class="reveal-item">
+          <p><strong>Flexible Service:</strong><br>Walk-in, convenient delivery, and wholesale options available.</p>
+        </li>
+        <li class="reveal-item">
+          <p><strong>Rigorous Maintenance:</strong><br>Regular machine checkups ensure peak performance and purity.</p>
+        </li>
+        <li class="reveal-item">
+          <p><strong>Personalized Service:</strong><br>We value every customer, offering tailored service and tracking.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Wilcare Aqua Water Refilling Station. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelector('.scroll-down-btn').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    const revealItems = document.querySelectorAll('.reveal-item');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    revealItems.forEach(item => {
+      observer.observe(item);
+    });
+  </script>
+</body>
+</html>

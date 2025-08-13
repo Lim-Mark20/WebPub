@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Wilcare Aqua - Our Products</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="products.css" />
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <header class="navbar">
+        <div class="navbar-container">
+            <img src="../images/logo.PNG" alt="Wilcare Aqua Logo" class="logo"/>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../landing_page/landing.html">Home</a></li>
+                    <li><a href="../feature/feature.html">Features</a></li>
+                    <li><a href="../signup/signup.html" class="btn-signup">Sign Up</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                &#9776;
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="products-section">
+            <div class="products-header">
+                <h1 class="section-title">Our Water Products & Services</h1>
+                <div class="search-bar-container">
+                    <input type="text" id="search-input" placeholder="Search products..." class="search-input" />
+                    <svg class="search-icon" fill="none" stroke="currentColor" 
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-card reveal-item">
+                    <img src="../images/products1.jfif" 
+                    alt="Gallon Container" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Gallon Container</h3>
+                        <p class="product-price" data-price="200.00">₱200.00</p>
+                        <div class="product-quantity-control">
+                            <label for="qty1">Qty:</label>
+                            <input type="number" id="qty1" value="1" min="1" max="99" class="quantity-input">
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card reveal-item">
+                    <img src="../images/products2.jpg" 
+                    alt="Gallon Round Container" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Gallon Round Container</h3>
+                        <p class="product-price" data-price="150.00">₱150.00</p>
+                        <div class="product-quantity-control">
+                            <label for="qty2">Qty:</label>
+                            <input type="number" id="qty2" value="1" min="1" max="99" class="quantity-input">
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card reveal-item">
+                    <img src="../images/products3.jfif" 
+                    alt="Plastic Water Bottle" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Plastic Water Bottle</h3>
+                        <p class="product-price" data-price="15.00">₱15.00</p>
+                        <div class="product-quantity-control">
+                            <label for="qty3">Qty:</label>
+                            <input type="number" id="qty3" value="1" min="1" max="10" class="quantity-input">
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card reveal-item">
+                    <img src="../images/products4.webp" 
+                    alt="Ice bag" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Ice Bag</h3>
+                        <p class="product-price" data-price="1.00">₱1.00</p>
+                        <div class="product-quantity-control">
+                            <label for="qty4">Qty:</label>
+                            <input type="number" id="qty4" value="1" min="1" max="50" class="quantity-input">
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card reveal-item">
+                    <img src="../images/products5.jpg" 
+                    alt="Case of Water Bottle" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Case of Water Bottle</h3>
+                        <p class="product-price" data-price="180.00">₱180.00</p>
+                        <div class="product-quantity-control">
+                            <label for="qty5">Qty:</label>
+                            <input type="number" id="qty5" value="1" min="1" max="15" class="quantity-input">
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card reveal-item">
+                    <img src="../images/products6.jpg" 
+                    alt="Gallon Refills" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Gallon Refills</h3>
+                        <p class="product-price" data-price="60.00">₱60.00</p>
+                        <div class="product-quantity-control">
+                            <label for="qty6">Qty:</label>
+                            <input type="number" id="qty6" value="1" min="1" max="20" class="quantity-input">
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+        </section>
+
+        <aside class="empty-sidebar" id="cart-sidebar">
+            <h2 class="sidebar-title">Your Cart / Quick Info</h2>
+            <div id="cart-content">
+                <div class="cart-placeholder" id="cart-placeholder">
+                    <p>Your cart is empty. Add some products to get started!</p>
+                </div>
+                <ul id="cart-items-container"></ul>
+                <div class="cart-summary" id="cart-summary" style="display:none;">
+                    <p>Total: <span id="cart-total-price">₱0.00</span></p>
+                   <button class="btn-primary" id="checkout-btn">Checkout</button>
+                </div >
+            </div>
+            
+            <div id="transaction-complete-message" style="display:none;" class="transaction-message">
+                <h3>🎉 Order Placed! 🎉</h3>
+                <p>Your order has been successfully processed.</p>
+                <p>Thank you for your purchase!</p>
+            </div>
+            
+            <div class="sidebar-cta">
+                <h3>Need Assistance?</h3>
+                <p>Call us: <a href="tel:+639154217034">0915-421-7034</a></p>
+                <p>Email: <a href="mailto:ndg963@yahoo.com">ndg963@yahoo.com</a></p>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Wilcare Aqua Water Refilling Station. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        const searchInput = document.getElementById('search-input');
+        const productCards = document.querySelectorAll('.product-card');
+
+        searchInput.addEventListener('input', (event) => {
+            const searchTerm = event.target.value.toLowerCase();
+            productCards.forEach(card => {
+                const productName = card.querySelector('.product-name').textContent.toLowerCase();
+                if (productName.includes(searchTerm)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        const cartItemsContainer = document.getElementById('cart-items-container');
+        const cartPlaceholder = document.getElementById('cart-placeholder');
+        const cartSummary = document.getElementById('cart-summary');
+        const cartTotalPrice = document.getElementById('cart-total-price');
+        const checkoutBtn = document.getElementById('checkout-btn');
+        const transactionCompleteMessage = document.getElementById('transaction-complete-message');
+
+        function updateCartDisplay(cartItems) {
+            cartItemsContainer.innerHTML = '';
+            let total = 0;
+            if (cartItems.length === 0) {
+                cartPlaceholder.style.display = 'block';
+                cartSummary.style.display = 'none';
+                transactionCompleteMessage.style.display = 'none';
+            } else {
+                cartPlaceholder.style.display = 'none';
+                cartSummary.style.display = 'block';
+                cartItems.forEach(item => {
+                    renderCartItem(item);
+                    total += item.price * item.quantity;
+                });
+                cartTotalPrice.textContent = `₱${total.toFixed(2)}`;
+            }
+        }
+        
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedCart = JSON.parse(localStorage.getItem('cartItems')) || [];
+            updateCartDisplay(savedCart);
+        });
+
+        document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+            button.addEventListener('click', (event) => {
+                const productCard = event.target.closest('.product-card');
+                const productName = productCard.querySelector('.product-name').textContent;
+                const productPrice = parseFloat(productCard.querySelector('.product-price').dataset.price);
+                const quantity = parseInt(productCard.querySelector('.quantity-input').value);
+
+                let savedCart = JSON.parse(localStorage.getItem('cartItems')) || [];
+                const existingItemIndex = savedCart.findIndex(item => item.name === productName);
+
+                if (existingItemIndex > -1) {
+                    savedCart[existingItemIndex].quantity += quantity;
+                } else {
+                    savedCart.push({
+                        name: productName,
+                        price: productPrice,
+                        quantity: quantity
+                    });
+                }
+                
+                localStorage.setItem('cartItems', JSON.stringify(savedCart));
+                updateCartDisplay(savedCart);
+            });
+        });
+
+        function renderCartItem(item) {
+            const li = document.createElement('li');
+            li.className = 'cart-item';
+            li.innerHTML = `
+                <div class="cart-item-info">
+                    <span class="cart-item-name">${item.name}</span>
+                    <span class="cart-item-price">₱${(item.price * item.quantity).toFixed(2)} (${item.quantity} pcs)</span>
+                </div>
+                <button class="remove-from-cart-btn" data-name="${item.name}">&times;</button>
+            `;
+            cartItemsContainer.appendChild(li);
+
+            li.querySelector('.remove-from-cart-btn').addEventListener('click', (event) => {
+                const itemName = event.target.dataset.name;
+                
+                let savedCart = JSON.parse(localStorage.getItem('cartItems')) || [];
+                const itemIndex = savedCart.findIndex(cartItem => cartItem.name === itemName);
+                if (itemIndex > -1) {
+                    savedCart.splice(itemIndex, 1);
+                    localStorage.setItem('cartItems', JSON.stringify(savedCart));
+                }
+                
+                updateCartDisplay(savedCart);
+            });
+        }
+        
+        checkoutBtn.addEventListener('click', () => {
+            let savedCart = JSON.parse(localStorage.getItem('cartItems')) || [];
+            if (savedCart.length > 0) {
+                localStorage.removeItem('cartItems');
+                cartPlaceholder.style.display = 'none';
+                cartSummary.style.display = 'none';
+                cartItemsContainer.innerHTML = '';
+                transactionCompleteMessage.style.display = 'block';
+                setTimeout(() => {
+                    transactionCompleteMessage.style.display = 'none';
+                    updateCartDisplay([]);
+                }, 5000);
+            }
+        });
+
+        const revealItems = document.querySelectorAll('.reveal-item');
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        revealItems.forEach(item => {
+            observer.observe(item);
+        });
+    </script>
+</body>
+</html>
