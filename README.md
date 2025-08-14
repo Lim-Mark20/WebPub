@@ -1,4 +1,5 @@
 # WebPub
 **Requirement for Webpub**
-**hosting on Github**
+
+## Hosting link from github
 **https://lim-mark20.github.io/WebPub/landing_page/landing.html**
