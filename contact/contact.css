@@ -295,6 +295,17 @@ font-size: 0.9rem;
 margin-top: auto;
 }
 
+.reveal-item {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal-item.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
 .contact-container {
 flex-direction: column;
