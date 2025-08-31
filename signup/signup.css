@@ -30,7 +30,6 @@ body {
   flex-direction: column;
 }
 
-/* Utility Classes */
 .btn-primary, .btn-signup {
   display: inline-block;
   padding: 0.8rem 1.8rem;
@@ -65,7 +64,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* --- START OF HEADER STYLES --- */
 .header {
   background-color: white;
   color: var(--text-color); 
@@ -109,8 +107,6 @@ body {
   margin-right: 1rem; 
 }
 
-
-/* Main Content Wrapper*/
 .main-content {
   flex-grow: 1;
   display: flex;
@@ -130,7 +126,6 @@ body {
   text-align: center;
 }
 
-/* Form Headings and Description */
 .signup-section h2 {
   font-size: 2.2rem;
   margin-bottom: 0.8rem;
@@ -146,7 +141,6 @@ body {
   margin-right: auto;
 }
 
-/* Form Groups and Inputs */
 .signup-form .form-group {
   margin-bottom: 1.5rem;
   text-align: left; 
@@ -192,7 +186,6 @@ body {
   display: block;
 }
 
-/* Buttons */
 .button-group {
   display: flex;
   justify-content: space-between;
@@ -233,7 +226,6 @@ body {
   box-shadow: 0 4px 10px rgba(108, 117, 125, 0.3);
 }
 
-/* Submitted Output Style */
 .form-output {
   background: #e6f7ff;
   padding: 2rem;
@@ -296,7 +288,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* Footer */
 .footer {
   text-align: center;
   padding: 1.5rem 1rem;
@@ -306,7 +297,6 @@ body {
   margin-top: auto;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .header h1 {
     font-size: 1.5rem;
@@ -366,3 +356,4 @@ body {
     font-size: 0.75rem;
   }
 }
+
