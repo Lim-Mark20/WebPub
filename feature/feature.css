@@ -312,6 +312,18 @@ figcaption {
   margin-bottom: 1.5rem;
 }
 
+.infographic-section {
+  text-align: center;
+}
+
+.infographic-section img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
 .business-info {
   background-color: #e6f7ff;
   text-align: center;
@@ -509,3 +521,4 @@ figcaption {
     font-size: 1rem;
   }
 }
+
